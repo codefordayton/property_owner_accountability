@@ -31,7 +31,7 @@ class RentalRegistrySpider(scrapy.Spider):
             io.StringIO(response.text),
             delimiter=",",
             quotechar='"',
-            lineterminator=",\r\n",
+            lineterminator="\r\n",
         )
 
         try:
